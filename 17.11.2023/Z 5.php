@@ -1,0 +1,1 @@
+Do zbudowania menu switch jest lepszy od if ponieważ jest czytelniejszy i szybszy gdyż porównuje tylko wartość wprowadzoną do wartości przypadków bez wykonywania instrukcji.
