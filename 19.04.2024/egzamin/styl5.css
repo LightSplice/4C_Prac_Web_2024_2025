@@ -1,0 +1,43 @@
+* {
+    font-family: Tahoma;
+}
+#baner_lewy, #baner_prawy {
+    background-color: #003d33;
+    color: white;
+    text-align: center;
+    border: 1px;
+    border-color: #003d33;
+    height: 50px;
+}
+#baner_lewy {
+    width: 70%;
+    float: left;
+}
+#baner_prawy {
+    width: 30%;
+    float: right;
+}
+#lewy {
+    background-color: #26a69a;
+    height: 550px;
+    width: 70%;
+    float: left;
+}
+#prawy {
+    background-color: #26a69a;
+    height: 550px;
+    width: 30%;
+    float: right;
+}
+#wizytówki {
+    width: 400px;
+    margin: 30px;
+    text-align: center;
+    border: 1px;
+    border-color: #003d33;
+    float: right;
+}
+#stopka {
+    background-color: #003d33;
+    color: white;
+}
