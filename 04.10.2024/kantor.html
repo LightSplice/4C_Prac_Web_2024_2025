@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="kantor.css">
+        <title>Kantor</title>
+    </head>
+    <body>    
+        <fieldset>
+            <legend>KANTOR WALUT</legend>
+            Kwota*:
+            <input type="number" id="Kwota">
+            <select name="pierwszaWaluta" id="Waluta">
+                <option value="PLN">PLN</option>
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="EUR">EUR</option>
+                <option value="CHF">CHF</option>
+            </select>
+            <p>Wybierz waulutę docelową:</p>            
+            <input type="radio" name="Waluta" id="PLN">PLN<br>
+            <input type="radio" name="Waluta" id="USD">USD<br>
+            <input type="radio" name="Waluta" id="GBP">GBP<br>
+            <input type="radio" name="Waluta" id="EUR">EUR<br>
+            <input type="radio" name="Waluta" id="CHF">CHF<br>
+        </fieldset>
+        <div>
+            <button onclick="Przelicz()">Przelicz</button><br>
+            Otrzymasz: <div id="number"></div>
+            
+        </div>
+        <script>
+            function Przelicz() {
+                var wys = document.getElementById("number");
+                var money = document.getElementById("Kwota").value;
+                var select = document.getElementById("Waluta").value;
+                var whatMoney = document.querySelector('input[name="Waluta"]:checked').value;
+                var wynik = 0;
+
+                switch (select)
+                {
+                    case "PLN":
+                        if (document.getElementById("PLN").checked)
+                        {
+                            wynik = money * 1 + " PLN";
+                        }
+                        
+                        if (document.getElementById("USD").checked)
+                        {
+                            wynik = money * 0.26 + " USD";
+                        }
+                        
+                        if (document.getElementById("GBP").checked)
+                        {
+                            wynik = money * 0.19 + " GBP";
+                        }
+
+                        if (document.getElementById("EUR").checked)
+                        {
+                            wynik = money * 0.23 + " EUR";
+                        }
+
+                        if (document.getElementById("CHF").checked)
+                        {
+                            wynik = money * 0.22 + " CHF";
+                        }
+                        break;
+                    case "USD":
+                        if (document.getElementById("PLN").checked)
+                        {
+                            wynik = money * 3.91 + " PLN";
+                        }
+                        
+                        if (document.getElementById("USD").checked)
+                        {
+                            wynik = money * 1 + " USD";
+                        }
+                        
+                        if (document.getElementById("GBP").checked)
+                        {
+                            wynik = money * 0.76 + " GBP";
+                        }
+
+                        if (document.getElementById("EUR").checked)
+                        {
+                            wynik = money * 0.91 + " EUR";
+                        }
+
+                        if (document.getElementById("CHF").checked)
+                        {
+                            wynik = money * 0.85 + " CHF";
+                        }
+                        break;
+                    case "GBP":
+                        if (document.getElementById("PLN").checked)
+                        {
+                            wynik = money * 5.15 + " PLN";
+                        }
+                        
+                        if (document.getElementById("USD").checked)
+                        {
+                            wynik = money * 1.32 + " USD";
+                        }
+                        
+                        if (document.getElementById("GBP").checked)
+                        {
+                            wynik = money * 1 + " GBP";
+                        }
+
+                        if (document.getElementById("EUR").checked)
+                        {
+                            wynik = money * 1.19 + " EUR";
+                        }
+
+                        if (document.getElementById("CHF").checked)
+                        {
+                            wynik = money * 1.12 + " CHF";
+                        }
+                        break;
+                    case "EUR":
+                        if (document.getElementById("PLN").checked)
+                        {
+                            wynik = money * 4.31 + " PLN";
+                        }
+                        
+                        if (document.getElementById("USD").checked)
+                        {
+                            wynik = money * 1.10 + " USD";
+                        }
+                        
+                        if (document.getElementById("GBP").checked)
+                        {
+                            wynik = money * 0.84 + " GBP";
+                        }
+
+                        if (document.getElementById("EUR").checked)
+                        {
+                            wynik = money * 1 + " EUR";
+                        }
+
+                        if (document.getElementById("CHF").checked)
+                        {
+                            wynik = money * 0.94 + " CHF";
+                        }
+                        break;
+                    case "CHF":
+                        if (document.getElementById("PLN").checked)
+                        {
+                            wynik = money * 4.59 + " PLN";
+                        }
+                        
+                        if (document.getElementById("USD").checked)
+                        {
+                            wynik = money * 1.17 + " USD";
+                        }
+                        
+                        if (document.getElementById("GBP").checked)
+                        {
+                            wynik = money * 0.89 + " GBP";
+                        }
+
+                        if (document.getElementById("EUR").checked)
+                        {
+                            wynik = money * 1.06 + " EUR";
+                        }
+
+                        if (document.getElementById("CHF").checked)
+                        {
+                            wynik = money * 1 + " CHF";
+                        }
+                        break;
+                    
+                }
+                wys.innerText = wynik;
+
+
+
+            }
+        </script>
+    </body>
+</html>

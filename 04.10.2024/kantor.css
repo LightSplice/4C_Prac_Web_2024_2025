@@ -1,0 +1,29 @@
+body {
+    margin: auto;
+    padding-top: 16%;
+}
+fieldset {
+    border-radius: 10px;
+    margin-left: 770px;
+    margin-right: 770px;
+    border-color: black;
+    text-align: left;
+    padding-top: 5px;
+}
+button {
+    width: 350px;
+    margin-top: 5px;
+    background-color: darkcyan;
+    color: white;
+    border-radius: 10px;
+    border-color: black;
+    font-size: 15px;
+}
+legend {
+    margin: auto;
+    color: darkcyan;
+    font-size: 20px;
+}
+div {
+    margin-left: 770px;
+}
